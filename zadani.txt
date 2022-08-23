@@ -1,0 +1,31 @@
+Klasická hra Bomberman
+
+Implementujte následující varianty:
+
+pro alespoň 2 hráče na jednom počítači
+pro hru proti počítači
+Hra musí splňovat následující funkcionality:
+
+Načítání herních levelů (mapy) ze souboru (vytvořte vhodný formát)
+Sbírání konfigurovatelných bonusů (zvětšení plamenu, více bomb, odpalování bomb na dálku,...)
+Ukládání nejlepšího dosaženého skóre do souboru
+Kde lze využít polymorfismus? (doporučené)
+
+Ovládání hráčů: lokální hráč, umělá inteligence (různé druhy), síťový hráč
+Uživatelské rozhraní: konzolové, ncurses, SDL, OpenGL (různé druhy),...
+Efekty bonusů a nemocí: zvětšení plamenu, zvýšení počtu bomb,...
+Další informace
+
+https://en.wikipedia.org/wiki/Bomberman
+
+Upresneni
+Hra bude GUI aplikace vyzivajici knihovnu SDL.
+Hra bude mozna hrat v single player modu, kde hrac bude prochazet jednotlive levely. Nebo bude mozne hrat hru jako multiplayer na jedne obrazovce, kde kady hrac bude mit jine ovladani(klavesy)
+
+Architektura
+Hra se sklada z nekolika scen. Spustena muze byt pouze jedna scena najednou. Scena zarizuje ze se v nekonecne smycce obsluhuji vsechny entity v teto scene(vykreslovani, posun atd.).
+Kazda entita se sklada z nekolika komponent (pozice, animace, script...). Tyto komponenty se zpracovaji z takzvanych procesorech, ktere se volaji v 'nekonecne' smycce ze sceny.
+
+Polymorfismus
+Polymorfismus je pouzit u Script tridy. Ze Script tridy dedi vsechny scripty, ktere se pote pro zpracovani predavaji ScriptC componente.
+Dale je polymorfismus pouzit u LevelScene tridy, tak aby se nemusela duplikovat logika pro single a multi player.

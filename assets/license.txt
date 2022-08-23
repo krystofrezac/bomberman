@@ -1,0 +1,3 @@
+Assets taken from https://www.spriters-resource.com/snes/sbomber/
+
+Based on https://www.spriters-resource.com/page/faq/#:~:text=Can%20I%20use%20the%20sprites%20/%20models%20/%20textures%20/%20sounds%20on%20this%20site%20in%20my%20own%20projects%3F license is not needed for free non-commercial projects.

@@ -1,0 +1,6 @@
+rezackry
+doc/
+build/
+
+cmake-build-debug
+.idea

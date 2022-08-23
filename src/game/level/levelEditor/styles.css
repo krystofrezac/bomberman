@@ -1,0 +1,58 @@
+body {
+    display: flex;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    gap: 1px;
+    width: 800px;
+    height: 800px;
+}
+
+.tile-select {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-left: 50px;
+    width: 100px;
+}
+
+.tile-select-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.tile-select-item {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.tile-select-item-selected {
+    outline-offset: 1px;
+    outline: 2px solid orange;
+    border-spacing: 2px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 400px;
+    height: 100%;
+}
+
+.input {
+    height: 400px;
+}
+
+.tile-empty {
+    background-color: black;
+}
+
+.tile-wall {
+    background-color: #555;
+}
